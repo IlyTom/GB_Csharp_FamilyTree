@@ -13,7 +13,7 @@ namespace FamilyTree
         
         public override void Print(int indent = 0)
         {
-            base.Print(indent);
+            Console.WriteLine($"{new String(' ', indent)}|-- {this.Name}");
             if (Spouse != null)
             {
                 Console.WriteLine($"{new String(' ',indent)}  |-- Супруг(а) {Spouse.Name}");
